@@ -1,3 +1,3 @@
 # gevpro-week2-patrickroos
-# Patrick ...
+# Patrick Niewold
 # Roos Vermeulen
