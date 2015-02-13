@@ -1,6 +1,7 @@
 #!/usr/bin/python
 #country.py
 #Roos Vermeulen
+#Patrick Niewold
 
 class Country:
 	
