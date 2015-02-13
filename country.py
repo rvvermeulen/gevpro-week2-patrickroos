@@ -3,10 +3,13 @@
 #Roos Vermeulen
 #Patrick Niewold
 
+import flag_color
+
 class Country:
 	
 	def __init__(self, name):
 		self.name = name
+		self.flag = flag_color.Flagcolor()
 
 	def __str__(self):
 		print("Hello from " + self.name)
