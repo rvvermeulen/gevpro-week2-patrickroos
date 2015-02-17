@@ -9,10 +9,10 @@ class Country:
 	
 	def __init__(self, name):
 		self.name = name
-		self.flag = flag_color.Flagcolor()
+		self.flag = flag_color.FlagColor()
 
 	def __str__(self):
-		print("Hello from " + self.name)
+		return "Hello from " + str(self.name)
 
 def createCountries():
 	source = open("countries_list.txt","r")
