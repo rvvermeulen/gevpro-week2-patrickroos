@@ -16,18 +16,20 @@ class Flag_UI(QtGui.QWidget):
 		self.initUI()
 		
 	def initUI(self):
-		#Create Menu
-		namelist = self.createnamelist()
-		self.menulist = QtGui.QComboBox(self)
-		self.menulist.addItems(namelist)
-		
-		#Starts self.setcountry
-		self.setcountry()
-		self.menulist.currentIndexChanged.connect(self.setcountry)
 		
 		#Create Layout
 		grid = QtGui.QGridLayout()
 		self.setLayout(grid)
+		
+		#Create Menu
+		namelist = self.createnamelist()
+		self.menulist = QtGui.QComboBox(self)
+		self.menulist.addItems(namelist)
+		#Starts self.setcountry
+		self.setcountry()
+		self.menulist.currentIndexChanged.connect(self.setcountry)
+		
+	
 		grid.addWidget(self.menulist, 0, 0)
 		
 	def setcountry(self):
