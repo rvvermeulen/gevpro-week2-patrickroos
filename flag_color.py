@@ -9,6 +9,7 @@
     self.setRed(), self.setGreen() and self.setBlue()
 """
 
+import sys
 from PyQt4 import QtGui
 from random import randrange
 
@@ -22,4 +23,4 @@ class FlagColor(QtGui.QColor):
         self.setRed(randrange(0, 256))
         self.setGreen(randrange(0, 256))
         self.setBlue(randrange(0, 256))
-        
+        return self
