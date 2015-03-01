@@ -16,7 +16,7 @@ class Country:
 
 def createCountries():
 	source = open("countries_list.txt","r")
-	countrieslist = []
+	countrieslist = ["-Choose Country-"]
 	for line in source:
 		line.strip()
 		country = Country(line)
